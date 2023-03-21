@@ -3,6 +3,7 @@ import ExpensesList from "./ExpensesList";
 import Card from "../UI/Card";
 import "./Expenses.css";
 import ExpensesFilter from "./ExpensesFilter";
+import ExpensesChart from "./ExpensesChart";
 
 const Expenses = (props) => {
   const [yearData, setYearData] = useState("2020");
@@ -20,6 +21,7 @@ const Expenses = (props) => {
     <div>
       <Card className="expenses">
         <ExpensesFilter selected={yearData} onDataFiltered={filterFowarded} />
+        <ExpensesChart expenses={filteredExpenses} />
         <ExpensesList items={filteredExpenses} />
 
         {/* this method we were using proved to put too much content into the JSX retrun statement, i instead moved my logic to above the return */}
