@@ -5,22 +5,39 @@ import NewExpense from "./components/NewExpense/NewExpense";
 const INITIAL_EXPENSES = [
   {
     id: "e1",
-    title: "Toilet Paper",
-    amount: 94.12,
+    title: "School Books",
+    amount: 215.25,
     date: new Date(2020, 7, 14),
   },
-  { id: "e2", title: "New TV", amount: 799.49, date: new Date(2021, 2, 12) },
+  {
+    id: "e2",
+    title: "Tire Replacement",
+    amount: 304.49,
+    date: new Date(2021, 2, 12),
+  },
   {
     id: "e3",
-    title: "Car Insurance",
-    amount: 294.67,
+    title: "Rent Cost",
+    amount: 900,
     date: new Date(2021, 2, 28),
   },
   {
     id: "e4",
-    title: "New Desk (Wooden)",
-    amount: 450,
-    date: new Date(2021, 5, 12),
+    title: "New Shoes",
+    amount: 50,
+    date: new Date(2021, 6, 12),
+  },
+  {
+    id: "e5",
+    title: "Washer Replacement",
+    amount: 550,
+    date: new Date(2022, 7, 23),
+  },
+  {
+    id: "e6",
+    title: "Rent Cost",
+    amount: 900,
+    date: new Date(2023, 6, 11),
   },
 ];
 
